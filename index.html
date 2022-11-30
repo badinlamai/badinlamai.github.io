@@ -53,7 +53,9 @@
                     <div class="profile_header">
                         <img src="profilepic.jpeg" alt="Badin Profile Picture" style="width: 200px; border-radius: 50%;" />
                         <br />
-                        <h1 style="font-size:medium;">Badin Lamai</h1>
+                        <h1 style="font-size:medium;">
+                            <span id="myName">Badin Lamai</span>
+                        </h1>
                         IT Student<br />
                     </div> 
                 </td>
@@ -82,6 +84,22 @@
 
         </tbody>
     </table>
+    <button onclick="changeName()">Change Name</button>
+
+
+    <script>
+        console.log("Hello")
+        var x = 10
+        var y = 20
+        var z = x + y;
+        console.log(z)
+
+        function changeName() {
+            // change the name
+            var span = document.getElementById("myName");
+            span.innerHTML = "Jack Sparrow"
+        }
+    </script>
 </body>
 
 </html>
